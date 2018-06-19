@@ -14,7 +14,7 @@ function driverNamesWithRevenueOver(driver, revenue) {
 function exactMatch(drivers, obj) {
   return drivers.filter(function (d) {
     for(const key in obj) {
-      d[key] === obj[key]
+      return d[key] === obj[key]
     };
   });
 }
